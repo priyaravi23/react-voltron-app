@@ -5,7 +5,7 @@ import Button from "./Button";
 import FailingStarsModal from "./FailingStarsModal";
 
 const App = () => {
-    const [isModalOpen, setModalVisibility] = useState(true);
+    const [isModalOpen, setModalVisibility] = useState(false);
     const toggleModal = () => {
         setModalVisibility(!isModalOpen);
     };

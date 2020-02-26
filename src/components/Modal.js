@@ -16,7 +16,7 @@ const Modal = (props) => {
                 </div>
                 <div className="action-buttons">
                     {errMessage && <div className="error-message">{errMessage}</div>}
-                    <Button text={'close'} onClick={onClose}/>
+                    <Button className={'close'} text={'close'} onClick={onClose}/>
                     {actionButtons}
                 </div>
             </section>

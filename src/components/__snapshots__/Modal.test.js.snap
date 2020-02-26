@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> mount rendering matches the snapshot 1`] = `
+<Modal>
+  <div
+    className="modal-backdrop"
+  >
+    <section
+      className="modal undefined"
+    >
+      <div
+        className="modal-body"
+      />
+      <div
+        className="action-buttons"
+      >
+        <Button
+          className="close"
+          onClick={[Function]}
+          text="close"
+        >
+          <a
+            className="btn close"
+            href="#"
+            onClick={[Function]}
+          >
+            close
+          </a>
+        </Button>
+      </div>
+    </section>
+  </div>
+</Modal>
+`;
+
+exports[`<Modal /> shallow rendering matches the snapshot 1`] = `
+<div
+  className="modal-backdrop"
+>
+  <section
+    className="modal undefined"
+  >
+    <div
+      className="modal-body"
+    />
+    <div
+      className="action-buttons"
+    >
+      <Button
+        className="close"
+        onClick={[Function]}
+        text="close"
+      />
+    </div>
+  </section>
+</div>
+`;
