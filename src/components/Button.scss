@@ -5,8 +5,10 @@ a.btn {
   border-radius: 0.3em;
   padding: 0.35em 0.5em;
   text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
   color: $primary-color;
-  transition: color 100ms ease;
+  transition: background-color 100ms ease;
   &, &.primary {
     &:active {
       background-color: $secondary-color;

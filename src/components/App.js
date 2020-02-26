@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 
 import './App.scss';
 import Button from "./Button";
-import Modal from "./Modal";
 import FailingStarsModal from "./FailingStarsModal";
 
 const App = () => {

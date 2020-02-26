@@ -1,3 +1,16 @@
-.failing-stars-modal {
+@import "../variables";
 
+.star-title {
+  padding: 1em 0 0.5em;
+}
+.stars-container {
+  display: grid;
+  min-height: 9em;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 0 0 0;
+  .star {
+    padding: 0.75em 0;
+    text-transform: capitalize;
+    border-bottom: 1px solid $separator-color;
+  }
 }
