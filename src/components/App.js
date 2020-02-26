@@ -1,12 +1,12 @@
 import React from 'react';
 
 import './App.scss';
+import Button from "./Button";
 
 const App = () => {
     return (
         <div>
-            My React Application
-            <a href="#" className="button">Open Modal</a>
+            <Button primary={true} text={'Open Modal'}/>
         </div>
     );
 };

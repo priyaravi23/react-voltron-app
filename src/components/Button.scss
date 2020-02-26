@@ -1,0 +1,22 @@
+@import "../variables";
+
+a.btn {
+  border: 1px solid $primary-color;
+  border-radius: 0.3em;
+  padding: 0.35em 0.5em;
+  text-decoration: none;
+  color: $primary-color;
+  transition: color 100ms ease;
+  &, &.primary {
+    &:active {
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+      color: white;
+    }
+  }
+}
+
+a.btn.primary {
+  background-color: $primary-color;
+  color: white;
+}
