@@ -1,8 +1,10 @@
 import {STAR_FETCH, STAR_FETCH_FAILURE, STAR_FETCH_SUCCESS} from "./action-types";
-import {mapByKey} from "../utils/utils";
+import {getState} from "./local-storage";
+
+console.log(getState());
 
 const DEFAULT_STATE = Object.freeze({
-    stars: new Map(),
+    stars: new Map(getState() || []),
     inProgress: false,
     err: null
 });
