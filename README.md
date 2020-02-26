@@ -1,3 +1,5 @@
+# Voltron
+
 ## Instructions:
 
 - Attached is a screenshot of a modal popup with some text on it
@@ -12,7 +14,4 @@
  - Don’t use a React boilerplate or create-react-app
  - Dockerize your code
 
-## Solution
-
- - Create a React application from scratch 
- - Write a React component for modal
+![sample](static/FailingStarModal.png) 

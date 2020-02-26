@@ -3,16 +3,17 @@ import React, {useState} from 'react';
 import './App.scss';
 import Button from "./Button";
 import Modal from "./Modal";
+import FailingStarsModal from "./FailingStarsModal";
 
 const App = () => {
-    const [isModalOpen, setModalVisibility] = useState(false);
+    const [isModalOpen, setModalVisibility] = useState(true);
     const toggleModal = () => {
         setModalVisibility(!isModalOpen);
     };
     return (
         <div>
             <Button onClick={toggleModal} primary={true} text={'Open Modal'}/>
-            {isModalOpen && <Modal onClose={toggleModal}/>}
+            {isModalOpen && <FailingStarsModal onClose={toggleModal}/>}
         </div>
     );
 };

@@ -7,10 +7,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal {
+  position:fixed;
+  background: white;
+  width: 80%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding: 2em;
+  border-radius: 0.5em;
+  > .title {
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+  .action-buttons {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    > .btn {
+      margin-left: 1em;
+    }
+  }
 }
 
 @supports (backdrop-filter: blur(3px)) {
   .modal-backdrop {
+    background-color: transparent;
     backdrop-filter: blur(20px);
   }
 }

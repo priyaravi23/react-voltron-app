@@ -6,11 +6,11 @@ import Button from "./Button";
 import {EMPTY_FUNC} from "../utils/utils";
 
 const Modal = (props) => {
-    const {title, onClose = EMPTY_FUNC, actionButtons = null} = props;
+    const {title, className, onClose = EMPTY_FUNC, actionButtons = null} = props;
     return (
         <div className="modal-backdrop">
-            <section className={'modal'}>
-                {title && <h2>{title}</h2>}
+            <section className={`modal ${className}`}>
+                {title && <h2 className={'title'}>{title}</h2>}
                 {props.children}
                 <div className="action-buttons">
                     <Button text={'close'} onClick={onClose}/>
@@ -22,7 +22,7 @@ const Modal = (props) => {
 };
 
 Modal.propTypes = {
-    title: oneOf([string, object]),
+    title: string,
     onClose: func,
     actionButtons: arrayOf(object)
 };
