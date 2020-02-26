@@ -1,9 +1,8 @@
 import React from 'react';
 import {func, string, bool} from 'prop-types';
+import {EMPTY_FUNC} from "../utils/utils";
 
 import './Button.scss';
-
-const EMPTY_FUNC = () => {};
 
 const Button = props => {
     const {onClick = EMPTY_FUNC, text, disabled} =  props;

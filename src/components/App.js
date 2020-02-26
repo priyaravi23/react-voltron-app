@@ -12,7 +12,7 @@ const App = () => {
     return (
         <div>
             <Button onClick={toggleModal} primary={true} text={'Open Modal'}/>
-            {isModalOpen && <Modal/>}
+            {isModalOpen && <Modal onClose={toggleModal}/>}
         </div>
     );
 };
