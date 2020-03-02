@@ -5,7 +5,7 @@ import {EMPTY_FUNC} from "../utils/utils";
 import './Button.scss';
 
 const Button = props => {
-    const {onClick = EMPTY_FUNC, text, disabled, className} =  props;
+    const {onClick = EMPTY_FUNC, text, disabled, className = ''} =  props;
     const handleClick = disabled ? EMPTY_FUNC : e => {
         e.preventDefault();
         onClick(e);

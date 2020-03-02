@@ -20,7 +20,7 @@ const FailingStarsModal = (props) => {
     return (<Modal
         title={'failing stars modal'}
         className={'failing-stars-modal'}
-        actionButtons={[<Button key={'add-star'} primary={true} onClick={props.fetchStar} text={'add star'}/>]}
+        actionButtons={[<Button key={'add-star'} primary={true} disabled={inProgress} onClick={props.fetchStar} text={'add star'}/>]}
         errMessage={err && 'Failed to fetch a new star! Please try again.'}
         onClose={onClose}>
         The following stars have been returned from the <code>/failing-stars</code> endpoint:
